@@ -1,0 +1,12 @@
+.payment-card {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .payment-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  

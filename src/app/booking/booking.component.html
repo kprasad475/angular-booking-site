@@ -1,4 +1,5 @@
-<mat-card>
+<mat-card class="booking-card" [@fadeIn]>
+    <img mat-card-image [src]="selectedBus?.image" alt="{{ selectedBus?.name }}">
     <mat-card-title>Booking Details</mat-card-title>
     <mat-card-content>
       <p>Bus: {{ selectedBus?.name }}</p>
