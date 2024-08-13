@@ -1,5 +1,17 @@
-.bus-card {
-    margin: 10px;
-    padding: 10px;
+.bus-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+  
+  .bus-card {
+    width: 300px;
+    margin: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .bus-card:hover {
+    transform: scale(1.05);
+  }
+  
   
