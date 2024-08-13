@@ -7,7 +7,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BusListComponent } from './bus-list/bus-list.component';
 import { BookingComponent } from './booking/booking.component';
 import { PaymentComponent } from './payment/payment.component';
-import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration(),

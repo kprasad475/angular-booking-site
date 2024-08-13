@@ -1,1 +1,12 @@
-<p>payment works!</p>
+<mat-card>
+    <mat-card-title>Payment Gateway</mat-card-title>
+    <mat-card-content>
+      <p>You are booking: {{ selectedBus?.name }}</p>
+      <p>Route: {{ selectedBus?.route }}</p>
+      <p>Total Fare: {{ selectedBus?.currency }} {{ selectedBus?.fare }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="makePayment()">Pay Now</button>
+    </mat-card-actions>
+  </mat-card>
+  
