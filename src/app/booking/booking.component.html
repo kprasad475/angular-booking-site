@@ -1,1 +1,13 @@
-<p>booking works!</p>
+<mat-card>
+    <mat-card-title>Booking Details</mat-card-title>
+    <mat-card-content>
+      <p>Bus: {{ selectedBus?.name }}</p>
+      <p>Route: {{ selectedBus?.route }}</p>
+      <p>Fare: {{ selectedBus?.currency }} {{ selectedBus?.fare }}</p>
+      <p>Seats Available: {{ selectedBus?.seats }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="proceedToPayment()">Proceed to Payment</button>
+    </mat-card-actions>
+  </mat-card>
+  
